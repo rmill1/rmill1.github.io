@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800&display=swap');
+
+body {
+  font-family: 'Lexend', arial, sans-serif;
+  color: #183059;
+  margin: 2em;
+  background-color: #7CC6FE;
+}
+
+.entry {
+  border-radius: 10px;
+  margin: 25px;
+  padding: 20px;
+  background-color: #C4FFB2;
+  box-shadow: 3px 3px 5px slategray;
+  /*overflow sets the height of the parent div to reflect the height of the children divs*/
+  overflow: auto;
+  
+}
+
+.float-img {
+  width: 30%;
+  float: left;
+}
+
+.float-text {
+  width: 70%;
+  float: right;
+}
+
+.float-pros {
+  width: 50%;
+  float: left;
+}
+
+.float-cons {
+  width: 50%;
+  float: right;
+}
+
+img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.img-gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h1 + h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+
