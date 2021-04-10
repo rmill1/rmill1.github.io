@@ -1,8 +1,8 @@
-# Upperline HTML + CSS Unit 1 Project
+# Upperline HTML + CSS Pre-work
 
-This is my project for Upperline Unit 1 of HTML and CSS!
 
-## Shasta's Sleep Diary
+
+## Unit 1 Project: Shasta's Sleep Diary
 
 I built a static webpage in honor of my cat (because I love her too much) and all of her different sleeping spots around my apartment.
 
