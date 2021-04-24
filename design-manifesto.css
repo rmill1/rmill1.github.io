@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800&display=swap');
+
+body {
+  background-color: #EAF6FF;
+  color: #2A2A72;
+  font-family: 'Lexend', arial, sans-serif;
+  text-align: center;
+}
+
+.head-foot {
+  background-color: #2A2A72;
+  color: #ffffff;
+  text-align: left;
+}
+
+.head-foot a {
+  color: #ffffff;
+}
+
+#link {
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card {
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 50%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 700;
+}
+
+h4 {
+  text-align: center;
+}
+
+.row {
+  padding: 2px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+
+.col-6{
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin: 5px;
+  
+  
+  
+}
