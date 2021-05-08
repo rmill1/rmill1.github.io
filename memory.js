@@ -8,6 +8,7 @@ let choice2;
 let state;
 let currentId;
 let clickCounter = 0;
+let score = 0;
 
 
 // originally I had a separate flipCard and first/second click functions but was able to combine into one function
@@ -144,7 +145,7 @@ function noMatch() {
 } // end noMatch
 
 
-const checkBonus = (e) => {
+const checkText = (e) => {
   
   if (e.keyCode == 13) {
     
@@ -154,61 +155,74 @@ const checkBonus = (e) => {
     
     if (state == "mn") {
       if (stateGuess.value == "Minnesota") {
-      console.log("correct!")
+      score++
+      console.log("correct! score: " + score)
       matchDiv.innerHTML = `<h4>You got it!</h4>`
     }
     }
     else if (state == "ny") {
       if (stateGuess.value == "New York") {
-      console.log("correct!")
+      score++
+      console.log("correct! score: " + score)
       matchDiv.innerHTML = `<h4>You got it!</h4>`
     }
     }
     else if (state == "wi") {
       if (stateGuess.value == "Wisconsin") {
-      console.log("correct!")
+      score++
+      console.log("correct! score: " + score)
       matchDiv.innerHTML = `<h4>You got it!</h4>`
     }
     }
     else if (state == "mi") {
       if (stateGuess.value == "Michigan") {
-      console.log("correct!")
+      score++
+      console.log("correct! score: " + score)
       matchDiv.innerHTML = `<h4>You got it!</h4>`
     }
     }
     else if (state == "nc") {
       if (stateGuess.value == "North Carolina") {
-      console.log("correct!")
+      score++
+      console.log("correct! score: " + score)
       matchDiv.innerHTML = `<h4>You got it!</h4>`
     }
     }
     else if (state == "il") {
       if (stateGuess.value == "Illinois") {
-      console.log("correct!")
+      score++
+      console.log("correct! score: " + score)
       matchDiv.innerHTML = `<h4>You got it!</h4>`
     }
     }
     else if (state == "wa") {
       if (stateGuess.value == "Washington") {
-      console.log("correct!")
+      score++
+      console.log("correct! score: " + score)
       matchDiv.innerHTML = `<h4>You got it!</h4>`
     }
     }
     else if (state == "ca") {
       if (stateGuess.value == "California") {
-      console.log("correct!")
+      score++
+      console.log("correct! score: " + score)
       matchDiv.innerHTML = `<h4>You got it!</h4>`
     }
+    }
+    
+    if (score == 8) {
+      matchDiv.innerHTML = '<h4><b>YOU WIN!</b></h4>'
+      
     }
     
     stateGuess.value = ""
     clickCounter = 0
   }
-} // end checkBonus
+} // end checkText
 
 
-// originally I had event listeners for all 16 cards, but found that 
-// document.addEventListener streamlined the code in a big way
+// originally I had event listeners for all 16 cards, but found that document.addEventListener streamlined the code in a big way
+// though at the top of flipCard I added an if statement to make sure only clicks on green/blue cards are counted
 document.addEventListener("click", flipCard)
-document.addEventListener("keypress", checkBonus)
+document.addEventListener("keypress", checkText)
 
