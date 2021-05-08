@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800&display=swap');
+
+*{
+  font-family: 'Lexend', arial, sans-serif;
+}
+
+/* body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden
+} */
+
+.container {
+  text-align: center;
+}
+
+.col-2 {
+  border: 1px solid white;
+  text-align: center;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.col-2:hover {
+  transform: scale(1.1);
+}
+
+.blue {
+  height: 10vw;
+  border-radius: 5px;
+  background-color: #094D92;
+  color: white;
+  margin: .5vw;
+}
+
+.green {
+  height: 10vw;
+  border-radius: 5px;
+  background-color: #95E06C;
+  margin: .5vw;
+}
+
+input {
+  padding : 2px;
+  width: 80%;
+  height: auto;
+  text-align: center;
+  font-size: 28;
+  font-weight: bold;
+}
+
+::placeholder {
+  font-size: 18;
+  font-weight: normal;
+  font-style: italic;
+}
+
+h1 {
+  padding: 10px;
+  font-weight: 700;
+}
+
+#match-div {
+  margin: 10px;
+}
+
+#text-div {
+  margin: 10px;
+}
+
+
+
+
+/* Styling for flipped and unflipped cards */
+
+.unflipped {
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fquestion%20mark%20black.png?v=1619635553672")
+}
+
+.unflipped-green {
+  height: 10vw;
+  border-radius: 5px;
+  background-color: #95E06C;
+  margin: .5vw;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fquestion%20mark%20black.png?v=1619635553672")
+
+}
+
+.flipped-mn {
+  border: 1px solid black;
+  background-color: white;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_Minnesota_1042883.png?v=1619634372011")
+}
+
+.flipped-ca {
+  border: 1px solid black;
+  background-color: white;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_California_1042882.png?v=1619634371913")
+}
+
+.flipped-ny {
+  border: 1px solid black;
+  background-color: white;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_New%20York_1029275.png?v=1619634372197")
+}
+
+.flipped-nc {
+  border: 1px solid black;
+  background-color: white;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_North%20Carolina_1029280.png?v=1619634372163")
+}
+
+.flipped-wi {
+  border: 1px solid black;
+  background-color: white;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_Wisconsin_1042896.png?v=1619634372412")
+}
+
+.flipped-wa {
+  border: 1px solid black;
+  background-color: white;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_Washington_1042894.png?v=1619634372336")
+}
+
+.flipped-mi {
+  border: 1px solid black;
+  background-color: white;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_Michigan_1031692.png?v=1619634371913")
+}
+
+.flipped-il {
+  border: 1px solid black;
+  background-color: white;
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_Illonois_1042884.png?v=1619634371913")
+}
+
+.matched {
+  border: none;
+
+  content: none;
+}
+
+/* Styling for navigation elements */
+
+.head-foot {
+  background-color: #094D92;
+  color: #ffffff;
+  text-align: left;
+  padding: 5px;
+  font-size: 14;
+}
+
+.head-foot a {
+  color: #ffffff;
+}
