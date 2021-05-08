@@ -19,6 +19,8 @@ The page uses a monochromatic color scheme, and is organized with the Bootstrap 
 
 This is a memory game with state shapes - click on the cards to reveal the state and try to make a match.
 
+Currently in full screen the page scrolls unless the inspector is open...a future goal is to ensure there is no scrolling at all so all game elements are seen at the same time
+
 ### Made by Rachel
 
 
