@@ -132,7 +132,7 @@ function yesMatch() {
 function noMatch() {
   console.log("not a match")
   
-  matchDiv.innerHTML = `<h4>Not a match!</h4>`
+  matchDiv.innerHTML = `<h4>Not a match! Flip 'em back over & try again!</h4>`
   
   choice1 = document.querySelector("#"+state+"1")
   choice1.classList.add("unflipped")
