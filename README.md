@@ -15,11 +15,21 @@ This is a design manifesto that includes several tips for good webpage design.
 The page uses a monochromatic color scheme, and is organized with the Bootstrap grid, card components, and a header and footer.
 
 
-## Javascript Unit 1 Project: Memory Game
+## JavaScript Unit 1 Project: Memory Game
 
 This is a memory game with state shapes - click on the cards to reveal the state and try to make a match.
 
 Currently in full screen the page scrolls unless the inspector is open...a future goal is to ensure there is no scrolling at all so all game elements are seen at the same time
+
+
+## JavaScript Unit 2 Project: Mini Pokedex
+
+This is a quick reference Pokedex where trainers can type in a Pokemon's name and get information about that monster's type, abilities, strengths, and weaknesses.
+
+Currently strength and weakness buttons only return a Pokemon's first type strengths and weaknesses (if it has two types)
+
+This page uses the PokeAPI
+
 
 ### Made by Rachel
 
