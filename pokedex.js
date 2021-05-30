@@ -1,3 +1,8 @@
+// FUTURE MODIFICATIONS
+//  --> add spell-check and display image of a professor looking confused if no match
+//  --> update abilities to moves?
+//  --> display strengths and weaknesses for both types if pokemon has two types
+
 console.log("pokedex script running")
 
 // SELECT ELEMENTS ON PAGE
@@ -185,13 +190,6 @@ async function actuallyFetchWeakness(type1, type2) {
 //   }
   
   displayWeakness(weaknesses)
-}
-
-// it appears that the PokeAPI v2 doesn't have pokemon descriptions :(
-async function fetchDescription(userChoice) {
-  let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${userChoice}/`)
-  .then(response => response.json())
-  console.log(response)
 }
 
 
