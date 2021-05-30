@@ -24,11 +24,9 @@ Currently in full screen the page scrolls unless the inspector is open...a futur
 
 ## JavaScript Unit 2 Project: Mini Pokedex
 
-This is a quick reference Pokedex where trainers can type in a Pokemon's name and get information about that monster's type, abilities, strengths, and weaknesses.
+This is a quick reference Pokedex that utilizies the PokeAPI. Trainers can type in a Pokemon's name and get information about that monster's type, abilities, strengths, and weaknesses.
 
 Currently strength and weakness buttons only return a Pokemon's first type strengths and weaknesses (if it has two types)
-
-This page uses the PokeAPI
 
 
 ### Made by Rachel

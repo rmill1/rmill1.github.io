@@ -12,8 +12,21 @@ const pokeName = document.querySelector("#pokeName")
 const pokeInfo = document.querySelector("#pokeInfo")
 const pokeImage = document.querySelector("#pokeImage")
 
+// will display pokemon image and type if enter key is pressed - eventually change to description?
+const pressEnter = (e) => {
+  if (e.keyCode == 13) {
+    let userChoice = textField.value.toLowerCase()
+    fetchImage(userChoice)
+    displayName(userChoice.toUpperCase())
+  }
+}
+
+
 
 // EVENT LISTENERS
+
+// display pokemon image if enter key pressed
+textField.addEventListener("keypress", pressEnter)
 
 typeButton.addEventListener("click", e => {
   console.log("type button clicked")
@@ -45,6 +58,7 @@ weaknessButton.addEventListener("click", e=> {
   fetchWeakness(userChoice)
   // textField.value = ""
 })
+
 
 
 // FUNCTIONS CALLING TO POKEAPI
@@ -173,11 +187,21 @@ async function actuallyFetchWeakness(type1, type2) {
   displayWeakness(weaknesses)
 }
 
+// it appears that the PokeAPI v2 doesn't have pokemon descriptions :(
+async function fetchDescription(userChoice) {
+  let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${userChoice}/`)
+  .then(response => response.json())
+  console.log(response)
+}
+
+
+
 
 // THE FUN STUFF TO UPDATE HTML ON PAGE
 
 function displayName(pokemon) {
- // pokeName.innerHTML = `<h2><b>${pokemon}</b></h2>` 
+  pokeName.innerHTML = `<h2><b>${pokemon}</b></h2>` 
+  pokeInfo.innerHTML = ``
 }
 
 function displayImage(image) {
@@ -206,4 +230,7 @@ function displayWeakness(weaknesses) {
   pokeInfo.innerHTML = `<h4>${weaknesses}</h4>`
 }
  
-  
+ 
+// USEFUL RESOURCES I USED FOR THIS PROJECT
+// PokeAPI: https://pokeapi.co/docs/v2
+// PokeAPI Guide: https://pokeapi-how.appspot.com/
