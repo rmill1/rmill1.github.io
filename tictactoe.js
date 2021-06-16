@@ -51,7 +51,7 @@ const placeX = (e) => {
     }
    } else if (!winner) {
      console.log("it's a draw")
-     results.innerHTML = `<h3>It's a draw!</h3>`
+     results.innerHTML = `<h3>It's a draw! Refresh the page to start a new game!</h3>`
      removeXclick()
    }
   }
@@ -102,7 +102,7 @@ const checkForWin = () => {
       if (userMatches == 3) {
         console.log("player1 wins")
         winner = true
-        results.innerHTML = `<h3>Player 1 wins! Refresh the page for a new game!</h3>`
+        results.innerHTML = `<h3>Player 1 wins! Refresh the page to start a new game!</h3>`
         removeXclick()
       }
     }
@@ -119,7 +119,7 @@ const checkForWin = () => {
         if (user2Matches == 3) {
           console.log("player2 wins")
           winner = true
-          results.innerHTML = `<h3>Player 2 wins! Refresh the page for a new game!</h3>`
+          results.innerHTML = `<h3>Player 2 wins! Refresh the page to start a new game!</h3>`
           removeXclick()
           removeOclick()
         }
@@ -137,7 +137,7 @@ const checkForWin = () => {
         if (computerMatches == 3) {
           console.log("computer wins")
           winner = true
-          results.innerHTML = `<h3>Computer wins! Refresh the page for a new game!</h3>`
+          results.innerHTML = `<h3>Computer wins! Refresh the page to start a new game!</h3>`
           removeXclick()
         }
       }
