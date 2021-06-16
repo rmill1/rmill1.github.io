@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800&display=swap');
+
+body {
+  text-align: center;
+  font-family: 'Lexend', arial, sans-serif;
+}
+
+content {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  margin: 1vw;
+}
+
+.container {
+ max-width: 70%;
+
+}
+
+#results-div {
+  margin: 2vh;
+  min-height: 5vh;
+}
+
+.row {
+   height: 11vw;
+}
+
+.column2 {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.row2 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.button {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  display: default;
+}
+
+.hide-button {
+  display: none;
+}
+
+.clickedX {
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_X_612067%20(2).png?v=1623509424498")
+}
+
+.clickedO {
+  content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_Circle_165112%20(3).png?v=1623509457052")
+}
+
