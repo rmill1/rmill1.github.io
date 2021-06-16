@@ -29,6 +29,11 @@ This is a quick reference Pokedex that utilizies the PokeAPI. Trainers can type 
 Currently strength and weakness buttons only return a Pokemon's first type strengths and weaknesses (if it has two types)
 
 
+## JavaScript Unit 3 Project: Tic Tac Toe
+This is a one-player or two-player tic tac toe game. Currently the computer takes only random picks. A future modification would be to teach it how to make "smarter" moves when playing against the user.
+
+For the code challenge that was part of the fellowship application, I chose the Python tic tac toe challenge, so it was super interesting to compare my approach to building a tic tac toe game for a second time...because it was very different! (in a good way)
+
 ### Made by Rachel
 
 
