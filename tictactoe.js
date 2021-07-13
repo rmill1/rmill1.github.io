@@ -28,7 +28,9 @@ let winningCombos = [
 
 const placeX = (e) => {
   // console.log(e.target)
- 
+  
+  let userPick = parseInt(e.target.id)
+  
   e.target.classList.add("clickedX")
   // console.log(e.target.id)
   // parseInt turns str id into int   
@@ -47,11 +49,12 @@ const placeX = (e) => {
       removeXclick()
       addOclick()
     } else {
-      placeO()  
+      // placeO()
+      placeOsmart(userPick)
     }
    } else if (!winner) {
      console.log("it's a draw")
-     results.innerHTML = `<h3>It's a draw!</h3>`
+     results.innerHTML = `<h3>It's a draw! Refresh the page to start a new game!</h3>`
      removeXclick()
    }
   }
@@ -74,6 +77,51 @@ const placeO = () => {
     // CHECK FOR WIN
     checkForWin()
     counter++
+  }
+}
+
+const placeOsmart = (userPick) => {
+  // computer makes a smarter move based on user's pick
+  let betterChoices = []
+  let smartChoice = 0
+  if (!winner) {
+    // FIRST GRAB CENTER SPOT IF NOT TAKEN
+    if (choices.includes(5)) {
+      smartChoice = 5
+    } else {
+        // ATTEMPT #1 - marginally smarter/less random - mostly defense (if anything)
+        winningCombos.forEach(combo => {
+        for (let i = 0; i < userPicks.length; i++) {
+          if (combo.includes(userPicks[i])) {
+            combo.forEach(number => {
+              if (!userPicks.includes(number) && !computerPicks.includes(number)) {
+                smartChoice = number
+                console.log(number)
+                // can't break during forEach :(
+                // so we'll just make i the max number to end the loop
+                i = userPicks.length
+              }
+            })
+          }
+        }
+      })
+    }
+    // ATTEMPT #2
+//     winningCombos.forEach(combo => {
+//       if (combo.includes(userPick)) {
+        
+//       }
+//     })
+    
+    computerPicks.push(smartChoice)
+    choices = choices.filter(number => number != smartChoice)
+    let computerChoice = document.getElementById(smartChoice)
+    computerChoice.classList.add("clickedO")
+    console.log("smart computer picks: " + computerPicks)
+    
+    checkForWin()
+    counter++
+    
   }
 }
 
@@ -102,7 +150,7 @@ const checkForWin = () => {
       if (userMatches == 3) {
         console.log("player1 wins")
         winner = true
-        results.innerHTML = `<h3>Player 1 wins! Refresh the page for a new game!</h3>`
+        results.innerHTML = `<h3>Player 1 wins! Refresh the page to start a new game!</h3>`
         removeXclick()
       }
     }
@@ -119,7 +167,7 @@ const checkForWin = () => {
         if (user2Matches == 3) {
           console.log("player2 wins")
           winner = true
-          results.innerHTML = `<h3>Player 2 wins! Refresh the page for a new game!</h3>`
+          results.innerHTML = `<h3>Player 2 wins! Refresh the page to start a new game!</h3>`
           removeXclick()
           removeOclick()
         }
@@ -137,7 +185,7 @@ const checkForWin = () => {
         if (computerMatches == 3) {
           console.log("computer wins")
           winner = true
-          results.innerHTML = `<h3>Computer wins! Refresh the page for a new game!</h3>`
+          results.innerHTML = `<h3>Computer wins! Refresh the page to start a new game!</h3>`
           removeXclick()
         }
       }

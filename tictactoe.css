@@ -3,6 +3,7 @@
 body {
   text-align: center;
   font-family: 'Lexend', arial, sans-serif;
+  background-color: #FBFBFF;
 }
 
 content {
@@ -54,5 +55,19 @@ h1 {
 
 .clickedO {
   content: url("https://cdn.glitch.com/2a9f0280-879e-4ff7-ace5-244070f40c6d%2Fnoun_Circle_165112%20(3).png?v=1623509457052")
+}
+
+.head-foot {
+  background-color: #1b2cc1;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+  font-size: 1vw;
+}
+
+.head-foot a {
+  color: #ffffff;
 }
 
