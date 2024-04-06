@@ -1,6 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800&display=swap');
+:root {
+  --darkblue: #313B72;
+  --lightblue: #B9D6F2;
+  --green: #0C7C59;
+  --red: #832232;
+  --white: #efefef;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: 'Lexend', arial, sans-serif;
+  padding-top: 3.1rem;
+  background-color: var(--darkblue);
+  color: var(--white);
+  font-family: "Manrope", sans-serif;
+}
 
+/* NAVBAR STYLES */
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--lightblue);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar li {
+  background-color: var(--lightblue);
+}
+
+#navbar a {
+  display: block;
+  color: var(--darkblue);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navbar li:hover {
+  background-color: var(--white);
+}
+
+/* #navbar li a:hover {
+  color: var(--white);
+} */
+
+/* GENERAL STYLES */
+h1, h2, h3 {
+  font-family: "Bakbak One", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+  background-color: var(--darkblue);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+#links {
+  text-align: center;
+  margin-top: 2rem;
+}
+#links a {
+  color: white;
+  font-size: 2rem;
+  margin-left: 30px;
+  
+}
+
+/* PROJECTS SECTION */
+#projects {
+  background-color: var(--red);
+  height: 100vh;
+  padding-top: 4rem;
+}
+
+.grid {
+  display: grid;
+  width: 80%;
+  margin: 1rem auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.project-tile {
+  background-color: var(--lightblue);
+  border-radius: 10px;
+  height: 35vh;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: var(--lightblue);
+  height: 10vh;
 }

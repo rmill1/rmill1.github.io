@@ -1,35 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Rachel's Projects</title>
-    <link rel="stylesheet" href="../rmill1.github.io/style.css" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=window-width, initial-scale=1.0">
+    <title>Rachel's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li>Thing 1</li>
-          <li>Thing 2</li>
-          <li>Thing 3</li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <h1>
-        Rachel's Portfolio
-      </h1>
-  
-      <ul>
-        <li><a href="../rmill1.github.io/resume/resume.html">Resume</a></li>
-        <li><a href="../rmill1.github.io/upperline/upperline.html">Projects for ULC Teaching Fellowship</a></li>
+    <!-- Navbar -->
+    <nav>
+      <ul id="navbar">
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
-    </main>
-
-    <footer>
-
-    </footer>
+    </nav>
     
+    <!-- Welcome section -->
+    <section id="welcome-section">
+      <div>
+        <h1>Hi, I'm Rachel</h1>
+        <p class="center subtitle">I'm an educator, developer, and musician</p>
+        <!-- Profile links -->
+        <div id="links">
+          <a href="https://www.linkedin.com/in/rmmiller1/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/rmill1" target="_blank"><i class="fab fa-github"></i></a>
+          <a id="profile-link" href="https://www.freecodecamp.org/rmill1" target="_blank"><i class="fa fa-free-code-camp"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="grid">
+        <div class="project-tile"></div>
+        <div class="project-tile"></div>
+        <div class="project-tile"></div>
+         <div class="project-tile"></div>
+        <div class="project-tile"></div>
+        <div class="project-tile"></div>
+        
+      </div>
+    </section>
+
+    <!-- Footer
+    <footer></footer> -->
+    <script src="https://kit.fontawesome.com/6d68b6b349.js" crossorigin="anonymous"></script>
   </body>
 </html>
