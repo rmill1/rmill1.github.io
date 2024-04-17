@@ -95,6 +95,7 @@ button {
   font-size: 14px;
 }
 
+/* Footer Styles */
 footer {
   position: fixed;
   left: 0;
@@ -103,6 +104,10 @@ footer {
   padding: 10px 0;
   font-size: 12px;
   margin-top: 15px;
-  background-color: navy;
+  background-color: black;
+  color: white;
+}
+
+footer a {
   color: white;
 }

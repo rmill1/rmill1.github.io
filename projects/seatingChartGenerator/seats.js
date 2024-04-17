@@ -1,10 +1,8 @@
 console.log('We love seating charts!')
 
-
-
 let currentClass;
 
-// Class Periods from classes.html
+// Class Periods
 const blockC = document.getElementById('c');
 const blockD = document.getElementById('d');
 const blockE = document.getElementById('e');
@@ -46,31 +44,24 @@ let seat19 = document.getElementById('seat19');
 let seat20 = document.getElementById('seat20');
 
 
-
 function getRoster(block) {
     // B PERIOD Q3
     // let rosterB = ['Ro', 'Elise', 'Taisei', 'Margaret', 'Avi', 'Lillie', 'JJ', 'Teddy', 'Chase', 'David', 'Rowan', 'Kaya', 'Alex', 'Sudiksha', 'Vivienne', 'Lucy']
     
     // C PERIOD
-    let rosterC = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', '\n', '\n', '\n', '\n', '\n']
+    let rosterC = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'\n','\n','\n','\n','\n']
 
-    
-    
     // D PERIOD - Q3
-    let rosterD = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', '\n', '\n']
+    let rosterD = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,'\n','\n']
   
- 
-    
     // E PERIOD - Q3
-    let rosterE = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', '\n', '\n']
+    let rosterE = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,'\n','\n']
     
-
     // F PERIOD - Q3
-    let rosterF = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', '\n', '\n', '\n', '\n', '\n']
-
+    let rosterF = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,'\n','\n','\n','\n','\n']
 
     // H PERIOD - Q3
-    let rosterH = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', '\n']
+    let rosterH = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,'\n']
     
     // call generateSeatingChart with correct roster
     if(block == 'c'){

@@ -125,3 +125,20 @@ html, body {
       min-width: 233px;
     }
   }
+
+  /* Footer Styles */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 12px;
+  margin-top: 15px;
+  background-color: black;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
