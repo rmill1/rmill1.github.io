@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=window-width, initial-scale=1.0">
+    <title>CS7 Reference</title>
+    <link href="./csref.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CS7 Reference</header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#html_structure">HTML Structure</a></li>
+        <li><a class="nav-link" href="#common_html_tags">Common HTML Tags</a></li>
+        <li><a class="nav-link" href="#css_styling">CSS Styling</a></li>
+        <li><a class="nav-link" href="#style_properties">Style Properties</a></li>
+        <li><a class="nav-link" href="#debugging_strategies">Debugging Strategies</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <h1>CS7 Reference</h1>
+      <!-- Introduction -->
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <p>This is a reference page that you can use throughout 7th Grade Computer Science this quarter. It has a lot of information, but probably not <em>everything</em> you might find yourself wondering about. Use this reference as a starting point, and other online resources as you see fit!</p>
+        <ul>
+          <li>
+            <header>Open and Close Tags</header>
+            <p>Most HTML tags have an <em>open</em> and a <em>close</em> tag. Tags are indicated by <strong>angle brackets</strong> and the name of the tag is in between the brackets. A close tag has a <strong>slash</strong> that tells the computer when the tag ends.</p>
+            <p>Here are common tags that you will use throught the quarter - note that they include both an opening tag and a closing tag: </p>
+            <code>
+            &lt;!-- Example tags --&gt;
+            &lt;h1&gt;This is the largest header&lt;/h1&gt;
+            &lt;h6&gt;This is the smallest header&lt;/h6&gt;
+            &lt;p&gt;This is a paragraph tag&lt;/p&gt;<br>
+            </code>
+          </li>
+          <li>
+            <header>Self-Closing Tags</header>
+            <p>Some HTML tags are special and they <strong>do not</strong> have a close tag with a slash. Here are a few self-closing tags that you will probably use at some point:</p>
+              <code>
+                &lt;!-- Example self-closing tags --&gt;
+&lt;hr&gt;
+&lt;br&gt;
+&lt;img src="mypic.jpg"&gt;<br>
+              </code>
+            </li>
+      </section>
+      <hr>
+      <!-- HTML Structure -->
+      <section id="html_structure" class="main-section">
+        <header>HTML Structure</header>
+        <p>The table below includes a number of common tags that you will likely use in almost all of your projects. This is not a complete list, but you can use a resource like the <a href="https://www.w3schools.com/TAGs/" target="_blank">W3Schools HTML Reference</a> for a more comprehensive list of HTML tags that exist!
+      </section>
+      <hr>
+      <!-- Common HTML Tags -->
+      <section id="common_html_tags" class="main-section">
+        <header>Common HTML Tags</header>
+      </section>
+      <hr>
+      <!-- CSS Styling -->
+      <section id="css_styling" class="main-section">
+        <header>CSS Styling</header>
+        <p>There are three types of styling that we will be doing this quarter, starting with your second mini project. Each method of styling share similarities, but the <em>location</em> of the styling changes.</p>
+        <ul>
+          <li>
+            <header>Inline Styling - Careers Page</header>
+            <code>
+              &lt;h1 style="background-color: navy; color: white;"&gt;Hello World&lt;/h1&gt;<br>
+            </code>
+          </li>
+          <li>
+            <header>Internal Styling - Animal Page</header>
+            <p>Internal styling is a method of styling with CSS, and it is done in the <strong>head</strong> section of your HTML file.</p>
+            <p>In this code snippet, the body of the page is styled to have a font of Arial and a background color of pink, and the h1 is styled to have a font size of 24 pixels and a font color of Rebecca purple</p>
+            <code>
+              &lt;head&gt;
+              &nbsp;&nbsp;&lt;style&gt;
+                &nbsp;&nbsp;&nbsp;&nbsp;body {
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family: Arial;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: pink;
+               &nbsp;&nbsp;&nbsp;&nbsp; }
+
+                &nbsp;&nbsp;&nbsp;&nbsp;h1 {
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 24px;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: rebeccaPurple;
+                &nbsp;&nbsp;&nbsp;&nbsp;}
+              &nbsp;&nbsp;&lt;/style&gt;
+              &lt;/head&gt;<br>
+            </code>
+              
+          </li>
+          <li>
+            <header>External Styling - All About You 2.0</header>
+            <p>External styling is another method of styling with CSS, and just as the name suggests, the styling is done externally, or <em>outside</em> of the HTML file. Usually this styling is done in a CSS file, such as a file called <strong>style.css</strong></p>
+            <p>Styling separately from your HTML allows for better organization of your structure and content (HTML) and your styles (CSS). It more easily allows you to quickly update your styles and/or content when the HTML and CSS are separated.</p>
+            <p>The example below shows CSS that styles various aspects of a paragraph tag and also centers an image. It looks almost the same as the internal styling example, <strong>BUT</strong> the style is located in the style.css file.</p>
+            <code>
+              /* This style is located in style.css */
+              
+              p {
+                &nbsp;&nbsp;background-color: #efefef;
+                &nbsp;&nbsp;border-style: dotted;
+                &nbsp;&nbsp;border-color: black;
+                &nbsp;&nbsp;border-width: 3px;
+                &nbsp;&nbsp;border-radius: 10px;
+              }
+
+              img {
+                &nbsp;&nbsp;width: 50%;
+                &nbsp;&nbsp;margin-left: auto;
+                &nbsp;&nbsp;margin-right: auto;
+              }
+
+            </code>
+          
+          </li>
+        </ul>
+      </section>
+      <hr>
+      <!-- Style Examples -->
+      <section id="style_properties" class="main-section">
+        <header>Style Properties</header>
+        <p>In the table below you will find a collection of common style properties that web developers like you can use to style their HTML. For a more comprehensive list of style properties, you can visit the <a href="https://www.w3schools.com/cssref/index.php" target="_blank">W3Schools CSS Reference</a></p>
+      </section>
+      <hr>
+      <!-- Debugging Strategies -->
+      <section id="debugging_strategies" class="main-section">
+        <header>Debugging Strategies</header>
+        <p>Stuck on a bug?</p>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+
+      </section>
+    </main>
+  </body>
+</html>

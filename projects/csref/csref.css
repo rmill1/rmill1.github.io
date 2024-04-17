@@ -1,0 +1,127 @@
+html, body {
+    font-family: Arial;
+    font-size: 62.5%;
+    line-height: 1.6;
+    /* box-sizing: border-box; */
+  }
+  
+  /* MAIN CONTENT STYLES */
+  #main-doc {
+    position: absolute;
+    left: 320px;
+    font-size: 1.5rem;
+    padding-right: 50px;
+  }
+  
+  header {
+    color: black;
+    /* margin: 10px; */
+    font-size: 1.8em;
+  }
+  
+  #main-doc header {
+    font-size: 2rem;
+  }
+  
+  code {
+    background-color: #eee;
+    display: block;
+    text-align: left;
+    line-height: 2;
+    padding: 10px;
+    margin: 10px;
+    white-space: pre-line;
+  }
+  
+  /* NAVBAR STYLES */
+  #navbar {
+    position: fixed;
+    min-width: 250px;
+    top: 0px;
+    left: 10px;
+    width: 250px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    font-size: 1.5rem;
+    padding-top: 30px;
+  }
+  
+  #navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  
+  #navbar li {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid;
+    padding: 10px 0;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    background-color: navy;
+    cursor: pointer;
+  }
+  
+  hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  
+  
+  /* For smaller screen widths */
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 90%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      /* border-bottom: 2px solid; */
+    }
+  
+    #main-doc {
+      /* position: relative; */
+      margin-left: 0px;
+      left: 35px;
+      margin-top: 270px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
