@@ -40,6 +40,8 @@ body {
 
 #navbar li {
   background-color: var(--lightblue);
+  /* font-weight: bold; */
+  font-size: 1.2rem;
 }
 
 #navbar a {
@@ -94,7 +96,7 @@ h3 {
 
 .subtitle {
   margin-top: 1rem;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 1.3rem;
 }
 
@@ -127,51 +129,46 @@ h3 {
 .grid {
   display: grid;
   width: 80%;
-  margin: 1rem auto;
+  margin: .5rem auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
-
-/* .project-tile {
-  background-color: var(--lightblue);
-  border-radius: 10px;
-  height: 35vh;
-  text-align: center;
-  font-size: 1.3rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.project-tile img {
-  width: auto;
-  height: auto;
-  max-height: 100%;
-} */
 
 .project-tile {
   background-color: var(--lightblue);
   border-radius: 10px;
   overflow: hidden;
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-tile img {
   width: 100%;
   aspect-ratio: 16 / 9;
-  height: auto;
-  object-fit: contain;  /* show whole image */
-  background: #0002;    /* subtle letterbox behind transparent areas */
+  height: 60%;
+  object-fit: contain;  
   display: block;
+  padding: 3%;
 }
 
 
 .project-tile a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--darkblue)
+  color: var(--darkblue);
+  font-size: 1.3rem;
+}
+
+.project-tile a:hover {
+  color: var(--red);
+  background-color: var(--white);
+}
+
+.project-tile p {
+  margin: 5%;
 }
 
 .project-tile a:visited {
