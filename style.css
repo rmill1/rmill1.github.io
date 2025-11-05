@@ -140,11 +140,22 @@ h3 {
   height: 35vh;
   text-align: center;
   font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tile img {
+  width: 100%
 }
 
 .project-tile a {
   text-decoration: none;
   cursor: pointer;
+  color: var(--darkblue)
+}
+
+.project-tile a:visited {
+  color: var(--red)
 }
 
 /* Change to two-columns for medium screens */
